@@ -49,7 +49,7 @@ router.post('/signup', async (req, res) => {
     }
 });
 
-// Login route with reCAPTCHA
+// Login route with reCAPTCHA (fixes for bug scrum 11)
 router.post('/login', async (req, res) => {
     const { email, password, captchaToken } = req.body;
 
